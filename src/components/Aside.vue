@@ -61,7 +61,13 @@
 				}, {
 					title: 'Data',
 					icon: 'el-icon-location',
-					sub: []
+					sub: [{
+						title: 'Score 学生成绩',
+						path: '/score'
+					},{
+						title: 'Leave 请假条',
+						path: '/leave'
+					}]
 				}, {
 					title: 'Data',
 					icon: 'el-icon-location',
