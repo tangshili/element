@@ -67,6 +67,9 @@
 					},{
 						title: 'Leave 请假条',
 						path: '/leave'
+					},{
+						title: 'Leave2  请假条',
+						path: '/Leave2'
 					}]
 				}, {
 					title: 'Data',
