@@ -64,7 +64,7 @@
 			},
 			getSocreList(n) {
 				let arr = [];
-				let names = ['小明','小红','小花','小李','小张'];
+				let names = ['张三','李四','王二','赵钱','孙李'];
 				let partments = ['设计部','销售部','工程部','开发组','财务部'];
 				for(let i = 0; i < n; i++) {
 					let index = Math.floor(Math.random()*names.length);

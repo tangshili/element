@@ -1,7 +1,7 @@
 <template>
 	<el-card class="leave">
-		<div slot="header" class="clearfix" style="text-align: center; font-size:18px; font-weight: bold;">
-			<span>请假条</span>
+		<div slot="header" class="clearfix" style="text-align: center; font-size:24px; ">
+			<span>请  假  条</span>
 			<!--<el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>-->
 		</div>
 
@@ -36,7 +36,7 @@
 			<el-row :gutter="20">
 				<el-col :span="12">
 					<el-form-item label="部门">
-						<el-select v-model="form.region" placeholder="请选择活动区域">
+						<el-select v-model="form.region" placeholder="请选择部门">
 							<el-option label="人事部门" value="1"></el-option>
 							<el-option label="销售部门" value="2"></el-option>
 							<el-option label="设计部门" value="3"></el-option>
