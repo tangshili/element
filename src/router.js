@@ -14,6 +14,7 @@ import Cascader from './views/Cascader.vue'
 import Score from './views/Score.vue'
 import Leave from './views/Leave.vue'
 import Leave2 from './views/Leave2.vue'
+import Leave3 from './views/Leave3.vue'
 
 Vue.use(Router)
 
@@ -76,5 +77,9 @@ export default new Router({
 		path:'/leave2',
 		name:'leave2',
 		component:Leave2
+	},{
+		path:'/leave3',
+		name:'leave3',
+		component:Leave3
 	}]
 })

@@ -20,25 +20,17 @@
 
 		<el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="page" :page-sizes="[10]" :page-size="size" layout="total, sizes, prev, pager, next, jumper" :total="total">
 		</el-pagination>
-		
-		
-		<el-dialog
-		  :title="flag?'同意请假':'驳回申请'"
-		  :visible.sync="dialogVisible"
-		  width="30%">
-		 <el-input
-  type="textarea"
-  :rows="2"
-  placeholder="意见"
-  v-model="textarea">
-</el-input>
 
-		  <span slot="footer" class="dialog-footer">
+		<el-dialog :title="flag?'同意请假':'驳回申请'" :visible.sync="dialogVisible" width="30%">
+			<el-input type="textarea" :rows="2" placeholder="意见" v-model="textarea">
+			</el-input>
+
+			<span slot="footer" class="dialog-footer">
 		    <el-button @click="dialogVisible = false">取 消</el-button>
 		    <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
 		  </span>
 		</el-dialog>
-		
+
 	</el-card>
 </template>
 
@@ -46,8 +38,8 @@
 	export default {
 		data() {
 			return {
-				flag:true,
-				dialogVisible:false,
+				flag: true,
+				dialogVisible: false,
 				size: 10,
 				total: 100,
 				page: 1,
@@ -56,39 +48,39 @@
 		},
 		methods: {
 			handleSizeChange(s) {
-				this.scores =  this.getSocreList(s);
+				this.scores = this.getSocreList(s);
 			},
 			handleCurrentChange(p) {
 				console.log(p);
-				this.scores =  this.getSocreList(this.size);
+				this.scores = this.getSocreList(this.size);
 			},
 			getSocreList(n) {
 				let arr = [];
-				let names = ['张三','李四','王二','赵钱','孙李'];
-				let partments = ['设计部','销售部','工程部','开发组','财务部'];
+				let names = ['张三', '李四', '王二', '赵钱', '孙李'];
+				let partments = ['设计部', '销售部', '工程部', '开发组', '财务部'];
 				for(let i = 0; i < n; i++) {
-					let index = Math.floor(Math.random()*names.length);
+					let index = Math.floor(Math.random() * names.length);
 					let s = {
 						id: 1,
 						name: names[index],
-						chinese:'13'+Math.ceil(Math.random()*10000000000),
-						math:partments[index],
-						english: '20'+(Math.floor(Math.random()*2)+18)+'-'+Math.floor(Math.random()*12)+'-'+Math.floor(Math.random()*30)
+						chinese: '13' + Math.ceil(Math.random() * 10000000000),
+						math: partments[index],
+						english: '20' + (Math.floor(Math.random() * 2) + 18) + '-' + Math.floor(Math.random() * 12) + '-' + Math.floor(Math.random() * 30)
 					};
 					arr.push(s);
 				}
 				return arr;
 			}
-		},created(){
-			this.scores =  this.getSocreList(this.size);
+		},
+		created() {
+			this.scores = this.getSocreList(this.size);
 		}
 	}
 </script>
 
 <style>
-	.el-pagination{
+	.el-pagination {
 		margin-top: 20px;
 		text-align: center;
 	}
-
 </style>

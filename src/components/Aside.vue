@@ -70,6 +70,9 @@
 					},{
 						title: 'Leave2  请假条',
 						path: '/Leave2'
+					},{
+						title: 'Leave3  请假条',
+						path: '/Leave3'
 					}]
 				}, {
 					title: 'Data',
