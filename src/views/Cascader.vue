@@ -13,7 +13,7 @@
 		data() {
 			return {
 				options: [],
-				selectedOptions2: [2, 52, 503]
+				selectedOptions2: [25, 321, 2706]
 			};
 		},
 		methods: {

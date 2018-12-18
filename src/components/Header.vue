@@ -2,7 +2,6 @@
 	<el-row type="flex" justify="start">
 
 		<el-col :span="6" style="padding-top: 10px;">
-
 			<el-autocomplete  prefix-icon="el-icon-search"  clearable value-key="name"  class="inline-input" v-model="result" :fetch-suggestions="querySearch" placeholder="请输入内容" @select="handleSelect"></el-autocomplete>
 		</el-col>
 
@@ -59,9 +58,9 @@
 			},
 			select() {}
 		},
-		mounted() {
+		created() {
 			// 获取路由中所有的地址
-			this.funList = this.$router.options.routes;
+			this.funList = [...this.$router.options.routes];
 		}
 	}
 </script>

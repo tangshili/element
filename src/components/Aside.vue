@@ -57,22 +57,19 @@
 					},{
 						title: 'Switch 开关',
 						path: '/switch'
+					},{
+						title: 'Tabs 切换',
+						path: '/tabs'
 					}]
 				}, {
 					title: 'Data',
 					icon: 'el-icon-location',
 					sub: [{
-						title: 'Score 学生成绩',
+						title: '待审核',
 						path: '/score'
 					},{
-						title: 'Leave 请假条',
+						title: '请假',
 						path: '/leave'
-					},{
-						title: 'Leave2  请假条',
-						path: '/Leave2'
-					},{
-						title: 'Leave3  请假条',
-						path: '/Leave3'
 					}]
 				}, {
 					title: 'Data',

@@ -1,7 +1,7 @@
 <template>
 	<el-card class="box-card">
 		<div slot="header" class="clearfix">
-			<span>Radio 单选</span>
+			<span>单选</span>
 			<el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
 		</div>
 		

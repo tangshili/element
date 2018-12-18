@@ -20,23 +20,23 @@
 
 		<h1>基础布局-24格子</h1>
 
-		<!--<el-row :gutter="20" tag="ul">
+		<el-row :gutter="20" tag="ul">
 			<el-col :span="6" :offset="6" tag="li">
-				<div class="grid-content bg-purple" ></div>
+				<div class="grid-content bg-purple" style="background-color: red;"></div>
 			</el-col>
 			<el-col :span="6" :offset="6" tag="li">
-				<div class="grid-content bg-purple" ></div>
+				<div class="grid-content bg-purple" style="background-color: blue;"></div>
 			</el-col>
-		</el-row>-->
+		</el-row>
 
-		<!--<el-row :gutter="20">
+		<el-row :gutter="20">
 			<el-col :span="6" :offset="6">
-				<div class="grid-content bg-purple" ></div>
+				<div class="grid-content bg-purple" style="background-color: red;"></div>
 			</el-col>
 			<el-col :span="6" :offset="6">
-				<div class="grid-content bg-purple"></div>
+				<div class="grid-content bg-purple" style="background-color: blue;"></div>
 			</el-col>
-		</el-row>-->
+		</el-row>
 		<el-row>
 			<el-col :span="24">
 				<div class="grid-content bg-purple-dark"></div>

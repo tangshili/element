@@ -13,12 +13,12 @@
 			<el-checkbox label="e" disabled>多选E</el-checkbox>
 		</el-checkbox-group>
 
-		<!--<label>
+		<label>
 			<input type="checkbox" v-model="checkList" name="" id="" value="123" />多选F
 		</label>
 
 		<label for="user">用户名</label>
-		<input type="text" name="user" id="user" value="" />-->
+		<input type="text" name="user" id="user" value="" />
 	</el-card>
 
 </template>

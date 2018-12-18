@@ -53,12 +53,12 @@
 
 			<el-row :gutter="10">
 				<el-col :span="12">
-					<el-form-item label="情急联系人" prop="other">
+					<el-form-item label="紧急联系人" prop="other">
 						<el-input v-model="leave.other"></el-input>
 					</el-form-item>
 				</el-col>
 				<el-col :span="12">
-					<el-form-item label="情急电话" prop="other_phone">
+					<el-form-item label="紧急电话" prop="other_phone">
 						<el-input v-model="leave.other_phone"></el-input>
 					</el-form-item>
 				</el-col>
