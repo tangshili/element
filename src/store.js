@@ -44,7 +44,10 @@ export default new Vuex.Store({
 			this.state.activePath = tab.path;
 		},
 		removeTab(state, path) {
-
+			state.tabs = state.tabs.filter(item => item.path != path);
+			if(state.activePath==path){
+				state.activePath='/home';
+			}
 		}
 	},
 	actions: {

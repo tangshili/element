@@ -13,7 +13,7 @@
 				"icon": "el-icon-news"
 			}, {
 				"title": "icon 图标",
-				"path": "/icon ",
+				"path": "/icon",
 				"icon": "el-icon-d-caret"
 			}, {
 				"title": "Button 按钮",

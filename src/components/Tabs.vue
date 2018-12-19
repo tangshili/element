@@ -1,7 +1,7 @@
 <template>
 
 	<el-tabs v-model="activePath" @tab-click="handleClick" @tab-remove="handleRemove">
-		<el-tab-pane :name="tab.path" :key="index" v-for="(tab,index) in tabs" :closable="index!=0">
+		<el-tab-pane :name="tab.path" :key="tab.path" v-for="(tab,index) in tabs" :closable="index!=0">
 			<span slot="label">
 			 	<i :class="tab.icon"></i>&nbsp;<span v-text="tab.title"></span>
 			</span>
@@ -29,14 +29,13 @@
 			}
 		},
 		methods: {
-			...mapMutations(['switchTab']),
+			...mapMutations(['switchTab','removeTab']),
 			handleClick(tab) {
 				this.$router.push(this.activePath);
 			},
-			handleRemove(name) {
-				this.tabs = this.tabs.filter(item => item.path != name);
-				this.activeName = this.tabs[0].path;
-				this.$router.pusth(this.activeName);
+			handleRemove(path) {
+				this.removeTab(path);
+				this.$.router.push(this.activePath);
 			}
 		}
 	}
